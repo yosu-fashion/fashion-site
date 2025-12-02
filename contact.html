@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الأزياء والموضة | تواصل معنا</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function sendMessage(event) {
+            event.preventDefault();
+            document.getElementById("messageResult").textContent = "تم إرسال رسالتك بنجاح 🌸";
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <div class="logo-title">
+            <h1>تواصل معنا</h1>
+            <p>نرحب بآرائك واقتراحاتك حول الموقع</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="trends.html">صيحات الموضة</a></li>
+                <li><a href="styling.html">تنسيق الأزياء</a></li>
+                <li><a href="video.html">فيديو الموضة</a></li>
+                <li><a href="contact.html" class="active">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="card">
+        <h2>أرسل رسالتك</h2>
+        <form onsubmit="sendMessage(event)">
+            <label>الاسم:</label>
+            <input type="text" required>
+
+            <label>البريد الإلكتروني:</label>
+            <input type="email" required>
+
+            <label>الرسالة:</label>
+            <textarea rows="4" required></textarea>
+
+            <button type="submit">إرسال</button>
+
+            <div id="messageResult"></div>
+        </form>
+    </section>
+    <section class="card">
+    <h2>التحديات التي واجهتني في المشروع</h2>
+    <p>
+        واجهت بعض الصعوبات في ربط الصفحات مع بعض، وإضافة الصور والفيديو والصوت.
+        في البداية لم يكن الفيديو يعمل بسبب خطأ في اسم الملف، وبعد التعديل اشتغل.
+        كذلك واجهت صعوبة في ترتيب الصور، ولكن تعلمت كيف أتحكم بها باستخدام CSS.
+        في النهاية تمكنت من حل جميع المشاكل.
+    </p>
+</section>
+
+<section class="card">
+    <h2>رأيي في تصميم المواقع</h2>
+    <p>
+        تعلمت من هذا المشروع كيف أصمم موقعًا بسيطًا باستخدام HTML وCSS،
+        وكيف أضيف الصور والفيديو والصوت وأربط الصفحات مع بعضها.
+        كان المشروع ممتعًا وساعدني على التعلم بطريقة أفضل،
+        وأشعر أني استفدت منه كثيرًا.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        بيانات النموذج تجريبية ومستخدمة لأغراض تعليمية فقط
+    </div>
+</footer>
+
+</body>
+</html>
